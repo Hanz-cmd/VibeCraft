@@ -1,0 +1,117 @@
+.saved-page .empty-state {
+  text-align: center;
+  padding: 6rem 2rem;
+}
+
+.saved-page .empty-state svg {
+  color: var(--secondary);
+  margin-bottom: 1rem;
+}
+
+.saved-page .empty-state h3 {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.saved-page .empty-state p {
+  color: var(--text-muted);
+}
+
+.outfits-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.saved-outfit-card {
+  padding: 1.5rem;
+}
+
+.outfit-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 1.5rem;
+}
+
+.outfit-header h3 {
+  font-size: 1.25rem;
+  margin-bottom: 0.5rem;
+}
+
+.occasion-badge {
+  display: inline-block;
+  padding: 0.25rem 0.75rem;
+  background: rgba(99, 102, 241, 0.2);
+  color: var(--primary);
+  border-radius: 20px;
+  font-size: 0.8rem;
+  text-transform: capitalize;
+}
+
+.outfit-header .delete-btn {
+  background: none;
+  border: none;
+  color: var(--text-muted);
+  cursor: pointer;
+  padding: 0.5rem;
+  border-radius: 8px;
+  transition: all 0.2s ease;
+}
+
+.outfit-header .delete-btn:hover {
+  background: rgba(239, 68, 68, 0.1);
+  color: var(--error);
+}
+
+.outfit-items-row {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  margin-bottom: 1rem;
+}
+
+.saved-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.saved-item img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 8px;
+  background: var(--surface-light);
+}
+
+.saved-item span {
+  font-size: 0.8rem;
+  color: var(--text-muted);
+  text-transform: capitalize;
+}
+
+.saved-item.missing {
+  width: 100px;
+  height: 100px;
+  background: var(--surface-light);
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.outfit-meta {
+  padding-top: 1rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.05);
+  font-size: 0.8rem;
+  color: var(--text-muted);
+}
+
+@media (max-width: 640px) {
+  .saved-item img {
+    width: 80px;
+    height: 80px;
+  }
+}

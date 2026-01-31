@@ -1,0 +1,62 @@
+.wardrobe-page .page-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.filters {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 1rem 0;
+  flex-wrap: wrap;
+  color: var(--text-muted);
+}
+
+.filter-btn {
+  padding: 0.5rem 1rem;
+  background: var(--surface);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 20px;
+  color: var(--text-muted);
+  cursor: pointer;
+  transition: all 0.2s ease;
+  text-transform: capitalize;
+}
+
+.filter-btn:hover {
+  background: var(--surface-light);
+  color: var(--text);
+}
+
+.filter-btn.active {
+  background: var(--primary);
+  border-color: var(--primary);
+  color: white;
+}
+
+.wardrobe-grid {
+  margin-top: 1rem;
+}
+
+.empty-state {
+  text-align: center;
+  padding: 6rem 2rem;
+}
+
+.empty-icon {
+  font-size: 4rem;
+  margin-bottom: 1rem;
+}
+
+.empty-state h3 {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.empty-state p {
+  color: var(--text-muted);
+  margin-bottom: 1.5rem;
+}
